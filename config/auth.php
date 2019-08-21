@@ -100,4 +100,10 @@ return [
         ],
     ],
 
+    'social' => [
+        'providers' => [
+            'google', 'facebook'
+        ]
+    ]
+
 ];
