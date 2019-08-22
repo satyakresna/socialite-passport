@@ -13,6 +13,14 @@ You must be familiar with Laravel, Socialite and Passport.
 6. Do migration
 7. Run using `php artisan serve`
 
+## Tips
+
+Explore web and api route. You will understand how it works.
+
+## Note
+
+The `access_token` comes from `Socialite::driver('google')->stateless()->user()->token` and pass it to the AuthController login API.
+
 ## Resource
 
 I learn this concept from Orobo Lucky's article: [Laravel API Authentication for Social Networks — OAuth2 Social Grant](https://itnext.io/laravel-api-authentication-for-social-networks-oauth2-social-grant-3ec1085b58b6). You should read.
