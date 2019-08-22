@@ -23,6 +23,6 @@ class AuthController extends Controller
         $requestToken = Request::create('oauth/token', 'POST');
         $response = Route::dispatch($requestToken);
 
-        return json_decode((string) $response->content(), true);
+        return response()->json(json_decode((string) $response->content(), true), $response->status());
     }
 }
